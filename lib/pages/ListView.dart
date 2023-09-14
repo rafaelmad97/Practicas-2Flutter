@@ -16,7 +16,7 @@ class ListViewPage extends StatelessWidget {
 
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Aplicación Android"),
+          title: const Text("Ejemplo de list View 1"),
           elevation: 12,
         ),
         body: ListView(children: [
