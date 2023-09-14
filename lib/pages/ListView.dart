@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class ListViewPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    const items = [
+    final items = [
       "Fry",
       "Bender",
       "Leela",
