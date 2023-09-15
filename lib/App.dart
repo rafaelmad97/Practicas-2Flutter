@@ -6,8 +6,8 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      routes: routes,
-      initialRoute: "homepage",
+      routes: AppRoutes.routes,
+      initialRoute: AppRoutes.initRoute,
     );
   }
 }
