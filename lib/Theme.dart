@@ -10,7 +10,7 @@ class AppTheme {
   static ThemeData _generateTheme(bool dark) =>
       dark ? ThemeData.dark() : ThemeData.light();
 
-  static ThemeData Theme = _generateTheme(true).copyWith(
+  static ThemeData Theme = _generateTheme(false).copyWith(
     useMaterial3: true,
     appBarTheme: AppBarTheme(
       backgroundColor: primary,
