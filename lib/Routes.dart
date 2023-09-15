@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:modulo2_componentesflutter/models/MenuOpciones.dart';
+import 'package:modulo2_componentesflutter/pages/Alerts.dart';
+import 'package:modulo2_componentesflutter/pages/Buttons.dart';
+import 'package:modulo2_componentesflutter/pages/Cards.dart';
 import 'package:modulo2_componentesflutter/pages/Home.dart';
 import 'package:modulo2_componentesflutter/pages/ListView.dart';
 import 'package:modulo2_componentesflutter/pages/ListView2.dart';
@@ -34,12 +37,17 @@ class AppRoutes {
         route: "cards",
         icon: Icons.card_giftcard,
         label: "Tarjetas",
-        Screens: ListView2Page()),
+        Screens: CardsPage()),
     MenuOpciones(
         route: "alerts",
         icon: Icons.add_alert,
         label: "Alertas",
-        Screens: ListView2Page()),
+        Screens: AlertsPage()),
+    MenuOpciones(
+        route: "buttons",
+        icon: Icons.smart_button,
+        label: "Botones",
+        Screens: ButtonsPage()),
   ];
 
   static String getInitRoute() => _initRoute;
