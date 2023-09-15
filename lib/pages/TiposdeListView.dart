@@ -2,24 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:modulo2_componentesflutter/pages/ListView.dart';
 import 'package:modulo2_componentesflutter/pages/ListView2.dart';
 
-class TiposdeListViewPage extends StatelessWidget {
-  final opciones = ["Tipo de lista 1", "Tipo de lista 2"];
+import '../Routes.dart';
+import '../models/MenuOpciones.dart';
 
-  void handleNavigate(index, context) {
-    switch (index) {
-      case 0:
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => ListViewPage()));
-        break;
-      case 1:
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => ListView2Page()));
-        break;
-      default:
-        print("la pagina no existe");
-        break;
-    }
-  }
+class TiposdeListViewPage extends StatelessWidget {
+  static final List<MenuOpciones> opciones =
+      AppRoutes.getListaRutas(parentRoute: "listtypes");
 
   @override
   Widget build(BuildContext context) {
@@ -29,8 +17,11 @@ class TiposdeListViewPage extends StatelessWidget {
       ),
       body: ListView.separated(
           itemBuilder: (context, index) => ListTile(
-                title: Text(opciones[index]),
-                onTap: () => handleNavigate(index, context),
+                title: Text(opciones[index].label),
+                leading: Icon(opciones[index].icon),
+                onTap: () {
+                  Navigator.pushNamed(context, opciones[index].route);
+                },
               ),
           separatorBuilder: (__, _) => const Divider(),
           itemCount: opciones.length),
