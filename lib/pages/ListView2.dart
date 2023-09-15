@@ -18,7 +18,6 @@ class ListView2Page extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Ejemplo de ListView 2"),
         elevation: 0,
-        backgroundColor: Colors.black,
       ),
       body: ListView.separated(
           itemCount: items.length,
