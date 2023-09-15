@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:modulo2_componentesflutter/Routes.dart';
+import 'package:modulo2_componentesflutter/Theme.dart';
 
 class App extends StatelessWidget {
   @override
@@ -8,6 +9,7 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: AppRoutes.getAllRoutes(context),
       initialRoute: AppRoutes.getInitRoute(),
+      theme: AppTheme.Theme,
     );
   }
 }

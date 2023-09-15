@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("My App Android"),
+          title: const Text("Componentes en Flutter"),
         ),
         body: ListView.separated(
             itemBuilder: (context, index) => ListTile(
