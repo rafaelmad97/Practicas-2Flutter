@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class AppTheme {
-  static Color primary = Colors.blue;
-  static Color secondary = Colors.redAccent;
+  static Color primary = Colors.red.shade900;
+  static Color secondary = Colors.blue;
 
   static Color TextPrimary = Colors.white;
 
@@ -11,14 +11,16 @@ class AppTheme {
       dark ? ThemeData.dark() : ThemeData.light();
 
   static ThemeData Theme = _generateTheme(false).copyWith(
-    useMaterial3: true,
-    appBarTheme: AppBarTheme(
-      backgroundColor: primary,
-      titleTextStyle: TextStyle(color: TextPrimary, fontSize: 22),
-      centerTitle: true,
-      elevation: 12,
-      shadowColor: Colors.black,
-    ),
-    primaryColor: primary,
-  );
+      useMaterial3: true,
+      appBarTheme:
+          AppBarTheme(backgroundColor: primary, foregroundColor: TextPrimary),
+      primaryColor: primary,
+      textButtonTheme: TextButtonThemeData(
+          style: TextButton.styleFrom(foregroundColor: primary)),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+              backgroundColor: primary, foregroundColor: TextPrimary)),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+          style: OutlinedButton.styleFrom(
+              foregroundColor: primary, side: BorderSide(color: primary))));
 }

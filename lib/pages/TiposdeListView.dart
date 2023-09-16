@@ -14,6 +14,7 @@ class TiposdeListViewPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Tipos de lista"),
+        leading: const BackButton(color: Colors.white),
       ),
       body: ListView.separated(
           itemBuilder: (context, index) => ListTile(

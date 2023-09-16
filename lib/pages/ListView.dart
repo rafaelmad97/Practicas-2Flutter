@@ -7,6 +7,7 @@ class ListViewPage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: const Text("Ejemplo de list View 1"),
+          leading: const BackButton(color: Colors.white),
         ),
         body: ListView(children: [
           ...PersonajesFuturama.map((personaje) => ListTile(
