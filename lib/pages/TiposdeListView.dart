@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:modulo2_componentesflutter/pages/ListView.dart';
-import 'package:modulo2_componentesflutter/pages/ListView2.dart';
 
 import '../Routes.dart';
 import '../models/MenuOpciones.dart';

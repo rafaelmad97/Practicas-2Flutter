@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:modulo2_componentesflutter/Theme.dart';
 import 'package:modulo2_componentesflutter/models/defaultValues/PersonajesFuturama.dart';
 
 import '../components/Card1Personalized.dart';

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:modulo2_componentesflutter/Routes.dart';
 import 'package:modulo2_componentesflutter/models/MenuOpciones.dart';
-import 'package:modulo2_componentesflutter/pages/TiposdeListView.dart';
 
 class HomePage extends StatelessWidget {
   static final List<MenuOpciones> opciones =
