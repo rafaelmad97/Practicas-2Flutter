@@ -6,6 +6,7 @@ class ButtonsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Botones"),
+        leading: const BackButton(color: Colors.white),
       ),
       body: Row(
         children: [

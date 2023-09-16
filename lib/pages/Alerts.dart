@@ -6,6 +6,7 @@ class AlertsPage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: const Text("Alerts"),
+          leading: const BackButton(color: Colors.white),
         ),
         body: const Center(
           child: Text("Alerts Page"),
